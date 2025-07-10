@@ -15,7 +15,7 @@ public class CountryController {
 
     @RequestMapping("/country")
     public Country getCountryIndia() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("countryIndia.xml");
         Country country = (Country) context.getBean("country");
         return country;
     }
